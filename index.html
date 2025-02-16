@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #chat-container {
+          width: 90%;
+          max-width: 600px;
+          height: 80vh;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #ccc;
+        }
+    
+        #chat-header {
+          flex: 1;
+          padding: 10px;
+          background-color: #eee;
+        }
+    
+        #chat-messages {
+          flex: 5;
+          padding: 10px;
+          overflow-y: scroll;
+        }
+    
+        #chat-input {
+          flex: 1;
+          padding: 10px;
+          border-top: 1px solid #ccc;
+        }
+    
+        @media (max-width: 768px) {
+          #chat-container {
+            height: 60vh;
+          }
+        }
+      </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIO Chatbot</title>
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#ffffff"> </head>
+<body>
+    <div id="chat-container">
+        </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
